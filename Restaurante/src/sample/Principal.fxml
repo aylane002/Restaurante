@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #aaaaaa;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerPrincipal">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="1000.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ScrollPane layoutX="237.0" layoutY="61.0" prefHeight="510.0" prefWidth="200.0">
+         <content>
+            <ListView fx:id="listViewLivres" prefHeight="509.0" prefWidth="180.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="22.0" layoutY="61.0" prefHeight="510.0" prefWidth="200.0">
+         <content>
+            <ListView fx:id="listViewReservadas" prefHeight="509.0" prefWidth="185.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="450.0" layoutY="61.0" prefHeight="510.0" prefViewportWidth="2.0" prefWidth="200.0">
+         <content>
+            <ListView fx:id="listViewOcupadas" prefHeight="509.0" prefWidth="180.0" />
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutX="669.0" layoutY="61.0" prefHeight="370.0" prefWidth="305.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ComboBox fx:id="ComboBoxPedidos" layoutX="99.0" layoutY="59.0" prefHeight="27.0" prefWidth="213.0" />
+            <Button fx:id="botaoAbrirMesa" layoutX="22.0" layoutY="172.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Abrir Mesa" />
+            <Button fx:id="botaoDesoculparMesa" layoutX="24.0" layoutY="329.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Desocupar Mesa" />
+            <Button fx:id="botaoReservarMesa" layoutX="194.0" layoutY="172.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Reservar Mesa" />
+            <ComboBox fx:id="comboBoxGarcom" layoutX="99.0" layoutY="98.0" prefHeight="27.0" prefWidth="213.0" />
+            <Label layoutX="26.0" layoutY="64.0" text="Pedido" />
+            <Label layoutX="31.0" layoutY="103.0" text="Garçom" />
+            <Label layoutX="17.0" layoutY="14.0" text="Mesa">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="290.0" text="Ocupantes" />
+            <ComboBox fx:id="ComboBoxOcupado" layoutX="99.0" layoutY="285.0" prefHeight="27.0" prefWidth="213.0" />
+            <Label layoutX="32.0" layoutY="221.0" text="Desocupar Mesa">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="30.0" layoutY="45.0" text="Reservadas" />
+      <Label layoutX="237.0" layoutY="45.0" text="Livres" />
+      <Label layoutX="450.0" layoutY="45.0" text="Ocupadas" />
+   </children>
+</AnchorPane>
